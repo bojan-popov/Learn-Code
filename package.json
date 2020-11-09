@@ -1,9 +1,8 @@
 {
-  "name": " ",
+  "name": "code-academy",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
-  "license": "",
+  "keywords": [],
+  "license": "ISC",
   "author": "",
   "scripts": {
     "build": "parcel build index.html",
@@ -13,5 +12,19 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bojan-popov/Learn-Code.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bojan-popov/Learn-Code/issues"
+  },
+  "homepage": "https://github.com/bojan-popov/Learn-Code#readme",
+  "description": ""
 }

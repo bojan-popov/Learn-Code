@@ -2,35 +2,258 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
 
-  <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#fafafa" />
 </head>
 
 <body>
-  <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="./js/references.js"></script>
-  <script src="./js/loops.js"></script>
-  <script src="./js/conditionals.js"></script>
-  <script src="js/main.js"></script>
+   <!--filter buttons -->
+   <div class="row">
+    <div
+      class="col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap"
+    >
+      <a
+        href="#"
+        class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+        data-filter="all"
+      >
+        all</a
+      >
+      <a
+        href="#"
+        class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+        data-filter="nike"
+        >Nike</a
+      >
+      <a
+        href="#"
+        class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+        data-filter="reebok"
+        >Reebok</a
+      >
+      <a
+        href="#"
+        class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+        data-filter="addidas"
+        >Addidas</a
+      >
+    </div>
+  </div>
+  <!-- search box -->
+  <div class="row">
+    <div class="col-10 mx-auto col-md-6">
+      <form>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text search-box" id="search-icon"
+              ><i class="fas fa-search"></i
+            ></span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="item...."
+            id="search-item"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--end of filter buttons -->
+  <div class="row" class="store-items" id="store-items">
+    <!-- single item -->
+    <div
+      class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item addidas"
+      data-item="addidas"
+    >
+      <div class="card addidas">
+        <div class="img-container">
+          <h5>addidas</h5>
+          <img
+            src="./img/addidas shoes.jpg"
+            class="card-img-top store-img"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- end of card-->
+    </div>
+    <!--end of single store item-->
+    <!-- single item -->
+    <div
+      class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item addidas"
+      data-item="addidas"
+    >
+      <div class="card addidas">
+        <div class="img-container">
+          <h5>addidas</h5>
+          <img
+            src="./img/addidas shoes3.jpg"
+            class="card-img-top store-img"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- end of card-->
+    </div>
+    <!--end of single store item-->
+    <div
+      class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item addidas"
+      data-item="addidas"
+    >
+      <div class="card addidas">
+        <div class="img-container">
+          <h5>addidas</h5>
+          <img
+            src="./img/addidas shoes2.jpg"
+            class="card-img-top store-img"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- end of card-->
+    </div>
+    <!--end of single store item-->
+    <div
+      class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item nike"
+      data-item="nike"
+    >
+      <div class="card nike">
+        <div class="img-container">
+          <h5>nike</h5>
+          <img
+            src="./img/nike shoes.jpg"
+            class="card-img-top store-img"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- end of card-->
+    </div>
+    <!--end of single store item-->
+    <!-- single item -->
+    <div
+      class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item nike"
+      data-item="nike"
+    >
+      <div class="card nike">
+        <div class="img-container">
+          <h5>nike</h5>
+          <img
+            src="./img/nike shoes.jpg"
+            class="card-img-top store-img"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- end of card-->
+    </div>
+    <!--end of single store item-->
+    <div
+      class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item nike"
+      data-item="nike"
+    >
+      <div class="card nike">
+        <div class="img-container">
+          <h5>nike</h5>
+          <img
+            src="./img/nike shoes2.jpg"
+            class="card-img-top store-img"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- end of card-->
+    </div>
+    <!--end of single store item-->
+    <div
+      class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item reebok"
+      data-item="reebok"
+    >
+      <div class="card reebok">
+        <div class="img-container">
+          <h5>reebok</h5>
+          <img
+            src="./img/reebok shoes.jpeg"
+            class="card-img-top store-img"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- end of card-->
+    </div>
+    <!--end of single store item-->
+    <div
+      class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item reebok"
+      data-item="reebok"
+    >
+      <div class="card reebok">
+        <div class="img-container">
+          <h5>reebok</h5>
+          <img
+            src="./img/reebok shoes2.jpg"
+            class="card-img-top store-img"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- end of card-->
+    </div>
+    <!--end of single store item-->
+    <div
+      class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item reebok"
+      data-item="reebok"
+    >
+      <div class="card reebok">
+        <div class="img-container">
+          <h5>reebok</h5>
+          <img
+            src="./img/reebok shoes3.jpg"
+            class="card-img-top store-img"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- end of card-->
+    </div>
+    <!--end of single store item-->
+    <!--end of single store item-->
+  </div>
 
+  <!-- modal-container -->
+  <div id="container-fluid" class="container-fluid">
+    <div class="row lightbox-container align-items-center">
+      <div class="col-10 col-md-10 mx-auto text-right lightbox-holder">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-item"></div>
+        <span class="lightbox-control btnLeft"></span>
+        <span class="lightbox-control btnRight"></span>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+  
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
